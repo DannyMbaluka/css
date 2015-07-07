@@ -1,0 +1,25 @@
+@import "../chap10/style.css";
+body {
+    font: icon;
+    color: WindowText;
+}
+
+.pointer > p:hover{
+    cursor: pointer;
+}
+
+.crosshair > p:hover{
+    cursor: crosshair;
+}
+
+.wait > p:hover{
+    cursor: wait;
+}
+
+.progress > p:hover{
+    cursor: progress;
+}
+
+.help > p:hover{
+    cursor: help;
+}

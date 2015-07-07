@@ -1,0 +1,19 @@
+div[class^="col-"]{
+    float: left
+}
+
+.col-3{
+    width: 33.3%
+}
+.row{
+    width: 100%;
+    display: block;
+    clear: both;
+    padding-top: 10px;
+}
+.float-right{
+    float: right;
+}
+.float-left{
+    float: left;
+}

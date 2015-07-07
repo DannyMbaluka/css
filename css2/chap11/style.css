@@ -1,0 +1,10 @@
+@import "../chap10/style.css";
+
+system {display: table;}
+planet {display: table-row-group;}
+name, moons {display: table-cell;}
+
+table{
+    border: 1px solid black;
+    background-color: beige;
+}

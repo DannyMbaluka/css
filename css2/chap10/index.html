@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div class="row">
+            <div class="float-left">
+                <h3>Float left</h3>
+                Left floated text
+            </div>
+            <div class="float-right">
+                <h3>Float right</h3>
+                Right floated text
+            </div>
+        </div>
+        <div class="row">
+            <h3>Float left, all element</h3>
+            <div class="col-3">
+                <p>
+                    A floating element must be placed as high as possible.
+                    Rule 8 is, of course, subject to the restrictions introduced by the previous seven
+                    rules. Historically, browsers aligned the top of a floated element with the top of
+                    the line box after the one in which the image’s tag appears. Rule 8, however,
+                    implies that its top should be even with the top of the same line box as that in
+                    which its tag appears, assuming there is enough room. The theoretically correct
+                    behaviors are shown in Figure 10-12.
+                </p>
+            </div>
+            <div class="col-3">
+                <p>
+                    A left-floating element must be put as far to the left as possible, and a right-
+                    floating element as far to the right as possible. A higher position is preferred to
+                    one that is further to the right or left.
+                    Again, this rule is subject to restrictions introduced in the preceding rules. There
+                    are caveats here similar to those in Rule 8, although they are not quite so fuzzy.
+                    As you can see from Figure 10-13, it is pretty easy to tell when an element has
+                    gone as far as possible to the right or left.
+                </p>
+            </div>
+            <div class="col-3">
+                <p>
+                    A floating element’s top may not be higher than the top of any earlier floating or
+                    block-level element.
+                    Similar to Rule 4, Rule 5 keeps floated elements from floating all the way to the
+                    top of their parent elements. It is also impossible for a floated element’s top to be
+                    any higher than the top of a floated element that occurs earlier. Figure 10-9 is an
+                    example of this; here, you can see that since the second float was forced below the
+                    first one, the third float’s top is even with the top of the second float, not the first.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <p>
+                    A floating element must be placed as high as possible.
+                    Rule 8 is, of course, subject to the restrictions introduced by the previous seven
+                    rules. Historically, browsers aligned the top of a floated element with the top of
+                    the line box after the one in which the image’s tag appears. Rule 8, however,
+                    implies that its top should be even with the top of the same line box as that in
+                    which its tag appears, assuming there is enough room. The theoretically correct
+                    behaviors are shown in Figure 10-12.
+                </p>
+            </div>
+            <div class="col-3">
+                <p>
+                    A left-floating element must be put as far to the left as possible, and a right-
+                    floating element as far to the right as possible. A higher position is preferred to
+                    one that is further to the right or left.
+                    Again, this rule is subject to restrictions introduced in the preceding rules. There
+                    are caveats here similar to those in Rule 8, although they are not quite so fuzzy.
+                    As you can see from Figure 10-13, it is pretty easy to tell when an element has
+                    gone as far as possible to the right or left.
+                </p>
+            </div>
+            <div class="col-3" style="clear: left">
+                <p>
+                    Should have fitted in the row above, but clear: left was set
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <h1>Positioning</h1>
+            <div class="col-3">
+                This is the first element, and it occupies the same space as one below
+            </div>
+            <div class="col-3" style="position: absolute; font-size: 0.8em">
+                When an element is positioned absolutely, it is completely removed from the docu-
+                ment flow. It is then positioned with respect to its containing block, and its edges are
+                placed using the offset properties ( top , left , etc.). The positioned element does not
+                flow around the content of other elements, or vice versa. This implies that an abso-
+                lutely positioned element may overlap other elements or be overlapped by them.
+            </div>
+        </div>
+        <div class="row" style="padding-bottom: 100px">
+
+        </div>
+        <div class="row" style="border-top: 1px solid">
+            <div class="col-3">
+                Element to the right is not visible
+            </div>
+            <div class="col-3" style="visibility: hidden">
+                Hidden element
+            </div>
+            <div class="col-3">
+                Element to the left is not visible
+            </div>
+        </div>
+        <div class="row">
+            <h2>Using the <em>z-index</em></h2>
+            <div class="col-3">
+                With all of the positioning going on, there will inevitably be a situation where two
+                elements try to exist in the same place, visually speaking. Obviously, one of them
+                will have to overlap the other—but how does one control which element comes out
+                “on top”? This is where the property z-index comes in.
+            </div>
+            <div class="col-3" style="position: absolute; font-size: 1.5em; z-index:2; background-color: azure; margin-top: 20px">
+                This element has with z-index set
+            </div>
+
+
+        </div>
+        <div class="row">
+            <h2>Fixed Positioning</h2>
+            <div style="position: fixed; background-color: #cccccc; top: 0px; height: 60px; width: 100%;">
+                <p>
+                    As implied in the previous section, fixed positioning is just like absolute positioning,
+                    except the containing block of a fixed element is the viewport. In this case, the ele-
+                    ment is totally removed from the document’s flow and does not have a position rela-
+                    tive to any part of the document.
+                </p>
+            </div>
+        </div>
+        <div style="width: 100%">
+            <div  style="width: 40%; background-color: green; height: 100px; float: right">
+                
+            </div>
+            <div  style="width: 40%; background-color: yellow; height: 100px; float: left">
+                
+            </div>
+        </div>
+
+
+    </body>
+</html>

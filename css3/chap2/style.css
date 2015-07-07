@@ -1,0 +1,59 @@
+@media (max-width: 400px){
+    .container{
+        background-color: blue;
+    }
+}
+
+@media(orientation: portrait){
+    .container{
+        background-color: green;
+    }
+}
+@media(orientation: landscape){
+    .container{
+        background-color: yellow;
+    }
+}
+.container{
+    clear: both;
+}
+header{
+    clear: both;
+}
+
+nav > ul{
+    list-style-type: none;
+    float: right;
+}
+nav > ul > li {
+    float: left;
+    margin: 5px 5px 10px 10px;
+}
+
+@media(orientation: portrait){
+    nav > ul{
+        list-style-type: none;
+        float: left;
+        width: 100%;
+        margin-left: 0px;
+        padding-left: 0px;
+        text-align: center;
+    }
+    nav > ul > li {
+        width: 90%;
+        border-top: 1px solid black;
+        clear: both;
+    }
+}
+nav > ul > li > a{
+    text-decoration: none;
+    font-size: 1.2em;
+    color: black;
+    font-weight: bolder;
+    font-family: monospace;
+}
+@media screen and (orientation: landscape), print and (orientation: portrait){
+    .container{
+        font-weight: lighter;
+    }
+}

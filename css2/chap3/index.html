@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cascade</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <h1>Structure and Cascade</h1>
+        <p>
+            A selector’s specificity is determined by the components of the selector itself. A spec-
+            ificity value is expressed in four parts, like this: 0,0,0,0 . The actual specificity of a
+            selector is determined as follows:
+        </p>
+        <ul>
+            <li>For every ID attribute value given in the selector, add 0,1,0,0 .</li>
+            <li>For every class attribute value, attribute selection, or pseudo-class given in the
+                selection, add 0,0,1,0
+            </li>
+            <li>
+                For every element and pseudo-element given in the selector, add 0,0,0,1 . CSS2
+                contradicted itself as to whether pseudo-elements had any specificity at all, but
+                CSS2.1 makes it clear that they do, and this is where they belong
+            </li>
+            <li>
+                Combinators and the universal selector do not contribute anything to the speci-
+                ficity (more on these values later)
+            </li>
+        </ul>
+        <h4>Example</h4>
+        h1 {color: red;} /* specificity = 0,0,0,1 */<br>
+        p em {color: purple;} /* specificity = 0,0,0,2 */<br>
+        .grape {color: purple;} /* specificity = 0,0,1,0 */<br>
+        *.bright {color: yellow;} /* specificity = 0,0,1,0 */<br>
+        p.bright em.dark {color: maroon;} /* specificity = 0,0,2,2 */<br>
+        #id216 {color: blue;} /* specificity = 0,1,0,0 */<br>
+        div#sidebar *[href] {color: silver;} /* specificity = 0,1,1,1 */<br>
+        *[id="meadow"] {color: red;} /* 0,0,1,0 */ -> attribute selector<br>
+        <hr>
+        <div>
+            Specificity of 0,0,0,1 -> div (element) only
+            <div class="inner">
+
+            </div>
+        </div>
+        <div class="one">
+            Specificity of 0,0,1,0 -> class selector only
+        </div>
+        <div id="three">
+            Specificity of 0,1,0,0 -> id selector only
+            <p class="important">Text marked as important</p>
+        </div>
+        <div>
+            <p style="color: greenyellow">Specificity of 1,0,0,1 i.e. inline, in a div</p>
+        </div>
+        <p lang="en">Attribute selector has specificity of 0,0,1,0</p>
+        <div class="order">Last declaration of the same attribute-value causes an override</div>
+    </body>
+</html>

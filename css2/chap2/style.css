@@ -1,0 +1,70 @@
+*{
+    //Universal
+    font-size: 18px;
+}
+body{//Element
+     background-color: green;
+}
+
+h2, h4 {
+    //Multiple selection
+    color: aqua;
+}
+
+h1{
+    //Grouping declaration
+    font: 30px Helvetica;
+}
+
+table tr td{
+    border-top: 1px solid #cccccc;
+    padding: 5px;
+}
+
+.row{
+    //Class selectors
+    color: wheat;
+}
+
+#mydiv{
+    color: aqua;
+}
+.primary.bold{
+    color: blue;
+    font-weight: bolder;
+}
+div[attr="attr"]{
+    color: blueviolet;
+}
+a[href]{
+    text-decoration: underline;
+}
+p[class~="warning"]{
+    border: 1px solid darkorange;
+}
+p[class^="btn"]{
+    border: 1px solid blue;
+}
+p[class$="sucess"]{
+    border: 1px solid green;
+}
+p[class*="info"]{
+    border: 1px solid skyblue;
+}
+*[lang|="en"] {color: graytext;}
+
+.ancestor .descendant{
+    font-size: 1.4em;
+}
+.parent > .child{
+    font-size: 1.8em;
+}
+h3 + p{
+    color: violet;
+}
+a:link{
+    font-size: 1.1em;
+}
+a:hover{
+    font-size: 2em;
+}

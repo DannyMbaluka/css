@@ -1,0 +1,6 @@
+@import "../chap10/style.css";
+
+a.pdf-doc:after{
+    content: url(pdf.png);
+}
+

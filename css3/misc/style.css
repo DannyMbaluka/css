@@ -1,0 +1,7 @@
+:root{
+    var-primaryColor: blue;
+}
+body{
+    color: var(primaryColor);
+}
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Chapter 2: Selectors</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <h2>Selectors</h2>
+        <h4>Exploring selectors</h4>
+        <div class="row">
+            Class selectors
+        </div>
+        <div id="mydiv">ID Selector</div>
+        <div class="primary bold">Multiple all</div>
+        <div attr="attr">Attribute Selector</div>
+        <div>
+            <a>Link with no href</a>
+            <a href="#">Link with href</a>
+        </div>
+        <div>
+            <p class="warning primary">Selected as it contains warning (~)</p>
+            <p class="btn-primary">Selected as it starts with btn (^)</p>
+            <p class="btn-sucess">Selected as it ends with success ($)</p>
+            <p class="btn-info-main">Selected as it's class attribute contains  info (*)</p>
+            <p lang="en">Selected as it's lang equals/begins with "en" (*[lang|="en"])</p>
+        </div>
+        <div class="ancestor">
+            <div class="other">
+                <div class="descendant">
+                    Ancestor - Descendant relationship
+                </div>
+            </div>
+        </div>
+        <div class="parent">
+            <div class="child">
+                Parent - Child Relationship
+            </div>
+        </div>
+        <h3>Header 3</h3>
+        <p>Selected sibling</p>
+        <div>
+            <a href="">Pseudo-classes (default-link)</a>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+html{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+  margin-left: 50px;
+  margin-right: 50px;
+  background-color: #fff;
+  background: url(../images/bg.jpg) repeat;
+}
+
+header > nav {
+    background-color: #5e8f98;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+header > nav > ul {
+    list-style-type: none;
+    position: relative;
+    display: block;
+    font-size: 1.5em;
+}
+
+header > nav > ul > li {
+    display: inline;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+header > nav > ul > li> a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header > nav > ul > li> a:hover {
+    color: #cccccc;
+}
+
+.content {
+
+}
+
+.col-3{
+     width: 33.33%;
+     background-color: yellow;
+     position: relative;
+}

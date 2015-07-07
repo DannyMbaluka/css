@@ -1,0 +1,23 @@
+div{
+    color: blue;
+}
+.one{
+    color: green;
+}
+#three{
+    color: orange;
+}
+
+.important{
+    font-weight: bolder;
+    color: red;
+}
+*[lang|="en"]{
+    color: maroon;
+}
+.order{
+    font-size: 3em;
+}
+.order{
+    font-size: 0.9em;
+}
