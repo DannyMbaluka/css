@@ -1,7 +1,14 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic|Lobster|Indie+Flower|Oswald|Bree+Serif|Raleway:400,100,900,800,700,600,500,300,200|Roboto+Condensed:300italic,400italic,400,300|Open+Sans+Condensed:300|Roboto);
 :root{
     var-primaryColor: blue;
 }
 body{
-    color: var(primaryColor);
+    font-family: roboto;
 }
 
+form > label{
+    display: block;
+}
+input:after{
+    content: "<div>error</div>";
+}

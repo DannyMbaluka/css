@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <h1>Using Multiple Columns</h1>
+        <div class="col-3">
+            The element E is the parent of the content you want to divide, and the
+            columns value is an integer that sets the number of columns. For example, to
+            flow content inside a div element into two columns, you would use:
+            div { column-count: 2; }
+            Let’s move on to a real-world example. I’ll demonstrate a few para-
+            graphs of copy displayed twice, the first distributed over two columns and
+            the second over three columns. Here’s the code I’ll use:
+            div[class*='-2'] { column-count: 2; }
+            div[class*='-3'] { column-count: 3; }
+        </div>
+        <div class="splitter">
+            <h4>And here is my splitter using col-span: all. The splitter has proven to be a very useful tool in the recent past</h4>
+        </div>
+        <div class="columns">
+            The element E is the parent of the content you want to divide, and the
+            columns value is an integer that sets the number of columns. For example, to
+            flow content inside a div element into two columns, you would use:
+            div { column-count: 2; }
+            Let’s move on to a real-world example. I’ll demonstrate a few para-
+            graphs of copy displayed twice, the first distributed over two columns and
+            the second over three columns. Here’s the code I’ll use:
+            div[class*='-2'] { column-count: 2; }
+            div[class*='-3'] { column-count: 3; }
+        </div>
+    </body>
+</html>

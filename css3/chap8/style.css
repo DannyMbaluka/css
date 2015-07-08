@@ -1,0 +1,31 @@
+/* 
+    Created on : Jul 8, 2015, 9:01:46 AM
+    Author     : daniel
+*/
+body{
+    background-image: url("bg.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    height: 900px;
+}
+.usual{
+    background-image: url("css3.jpg");
+    height: 300px;
+    background-repeat: repeat;
+}
+.space{
+    background-image: url("css3.jpg");
+    height: 600px;
+    background-repeat: space;
+}
+div{
+    color: red;
+}
+
+.round{
+    background-image: url("css3.jpg");
+    height: 600px;
+    background-repeat: round;
+}
+

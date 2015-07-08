@@ -1,0 +1,29 @@
+/* 
+    Created on : Jul 8, 2015, 9:57:01 AM
+    Author     : daniel
+*/
+.content{
+    border-top-left-radius: 20px 20px;
+    width: 400px;
+    background-color: aquamarine;
+    height: 400px;
+    border-bottom-right-radius: 50px 50px;
+    float: left;
+
+}
+.content2{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    float: left;
+    background-color: background;    
+}
+
+.box-shadow{
+    box-shadow: #999 20px -15px 10px 0;
+    width: 400px;
+    height: 400px;
+    float: left;
+    background-color: blueviolet;
+}
+

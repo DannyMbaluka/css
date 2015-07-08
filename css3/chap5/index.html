@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Web Fonts</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div>
+            <h1>Exploring Web Fonts</h1>
+        </div>
+        <div>
+            <p>
+                To display web fonts on your pages, you first need to define them by using
+                the @font-face rule. This rule sets the name and type of the font and pro-
+                vides the browser with the location of the file to use. Here’s the basic syntax:
+                u
+                v
+                @font-face {
+                font-family: FontName;
+                src: wlocal('fontname'), xurl('/path/filename.otf') yformat('opentype');
+                }
+                I’ll break this syntax down a little. First, I give the font a name with the
+                font-family property (u). This property is one you should be familiar with,
+                although it serves a slightly different purpose inside the rule than it does
+                when used in the declaration block for a regular selector; here, it’s used to
+                declare a font name, not to refer to one. Just like the font-family property in
+                CSS2.1, you can use multiple, space-separated words as long as you enclose
+                them within single quotation marks.
+            </p>
+            <p style="font-style: italic">
+                Here, you can see that the first @font-face rule defines the font name
+                as Gentium Basic (u) and gives the URL of the regular font face (v). The
+                second @font-face rule uses the same font name (w) but adds the font-style
+                property with the italic value (x), and the URL points at the font’s italic
+                face (y). The italic style is applied automatically and appropriately, without
+                your having to define it in the CSS, as in this example markup:
+            </p>
+        </div>
+        <footer>
+            Design by - Daniel Mbaluka (danielmbaluka@gmail.com)
+        </footer>
+    </body>
+</html>

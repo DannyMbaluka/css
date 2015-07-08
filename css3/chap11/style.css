@@ -1,0 +1,13 @@
+/* 
+    Created on : Jul 8, 2015, 12:00:31 PM
+    Author     : daniel
+*/
+html{
+    height: 100%;
+    background-image: linear-gradient(to right bottom, lightskyblue, white);
+}
+h1, p{
+    color: white;
+    font-size: 2em;
+}
+
