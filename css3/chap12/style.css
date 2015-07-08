@@ -1,0 +1,13 @@
+/* 
+    Created on : Jul 8, 2015, 1:35:05 PM
+    Author     : daniel
+*/
+h1{
+    float: left;
+    font-size: 3em;
+    text-shadow: 5px 2px graytext;
+}
+h1.rotated{
+    transform: rotate(-15deg) translateX(400px) translateY(150px) scale(2, -2);
+    position: absolute;
+}
