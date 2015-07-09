@@ -1,0 +1,33 @@
+/* 
+    Created on : Jul 9, 2015, 9:33:41 AM
+    Author     : daniel
+*/
+.blend{
+    height: 170px;
+    width: 250px;
+    background: url(eyes.jpg);
+    background-color: red;
+    background-size: contain;
+    float: left;
+    margin: 10px 10px;
+}
+
+.blend2{
+    height: 170px;
+    width: 250px;
+    background-image:  url('eyes.jpg'), url('landscape.jpg');
+    background-size: contain;
+    float: left;
+    margin: 10px 10px;
+}
+.blend3{
+    height: 170px;
+    width: 250px;
+    background-image:url('landscape.jpg');
+    background-size: contain;
+    float: left;
+    margin: 10px 10px;
+    font-size: 8em;
+}
+
+
