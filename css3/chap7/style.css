@@ -1,0 +1,20 @@
+body{
+    background-color:  white;
+}
+.col-3{
+    -webkit-column-count: 3;
+    -webkit-column-gap: 2em;
+    -webkit-column-rule-width: 0.5em;
+    -webkit-column-rule-style: dotted;
+    -webkit-column-rule-color: gray;
+}
+/*div[class="col-3"]{
+   column-width: 100px;
+}*/
+.columns{
+    -webkit-column-width: 200px;
+}
+.splitter{
+    column-span: all;
+}
+

@@ -1,0 +1,66 @@
+/*To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 8, 2015, 3:45:02 PM
+    Author     : daniel
+*/
+
+.transition{
+    background-color: red;
+    font-size: 2em;
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: -0.9s;
+}
+.transition:hover{
+    background-color: green;
+    font-size: 3em;
+}
+
+@keyframes advert{
+    from{
+        float: right;
+        width: 20%;
+        border: 4px solid lemon;
+        font-size: 2em;
+        background-color: orange;
+        font-weight: bolder;  
+    }
+    50%{
+        float: right;
+        width: 20%;
+        border: 4px solid orange;
+        font-size: 2em;
+        background-color: lemon;
+        font-weight: bolder;
+        color: white;
+    }
+    100%{
+        float: right;
+        width: 20%;
+        border: 4px solid lemon;
+        font-size: 2em;
+        background-color: orange;
+        font-weight: bolder; 
+    }
+
+}
+
+#animated{
+    border: 5px solid green;
+    float: right;
+}
+#animated{
+    animation-name: advert;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+#animated:hover{
+    animation-play-state: paused;
+}

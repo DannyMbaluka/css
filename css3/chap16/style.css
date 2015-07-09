@@ -1,0 +1,24 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 8, 2015, 7:22:00 PM
+    Author     : daniel
+*/
+.container{
+    display: flex;
+}
+.container > div{
+    flex-basis: 25%;
+}
+#rem{
+    font-size: 1.2rem;//root element (html)
+}
+.viewportdim{
+    width: 75vw;
+    height: 10vw;
+    background-color: bisque;
+}
+

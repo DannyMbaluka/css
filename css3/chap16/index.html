@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div>
+            <h1>Values and Sizing</h1>
+            <p>
+                In CSS a relative length unit is one whose value is relative to another prop-
+                erty. The two relative units in CSS2.1 are em , which is calculated from the
+                font-size property of an element, and ex , which is calculated from the
+                x-height of the element’s font (see “ font-size-adjust ” on page 56).
+            </p>
+        </div>
+        <div class="container" >
+            <div id="rem">
+                <h2>using rem</h2>
+                <p>
+                    If you presume that the root font-size of the document is the common
+                    browser default of 16px, the first li element will have a calculated font-size
+                    of 32px (16 multiplied by 2). But the font-size of the li elements nested
+                    inside the first would be calculated relative to the inherited value, making
+                    them 64px (32 multiplied by 2).
+                    This is where the rem unit becomes essential.
+                </p>
+            </div>
+            <div>
+                <h2>vmin vs vmax vs device orientation</h2>
+                <p>
+                    Another pair of supplemental units is available, too: vmax is equivalent
+                    to whichever is the greater value of vh and vw , and vmin is equivalent to the
+                    lesser value. For instance, if the viewport were 480×640, the height would
+                    be greater, so vmax would be equivalent to vh , and vmin would be equal to vw .
+                    Swap the viewport dimensions (640×480), and vmax and vmin reverse their
+                    values.
+                    So if you presume a viewport of 480×640, in the following code snippet,
+                    element E is 640px wide, and element F is 480px wide:
+                    E { width: 100vmax; }
+                    F { width: 100vmin; }
+                    The utility of vmax and vmin is in ensuring an element remains propor-
+                    tional to the viewport regardless of orientation—useful when that orienta-
+                    tion can easily change, such as on a mobile or tablet device.
+                </p>
+            </div>
+            <div style="font-size: calc(1rem * 1.5)">
+                <h2>Using calc(x operand y)</h2>
+                <p>
+                    One of the biggest changes in CSS3 lies in the way that lengths can be
+                    declared. In CSS2.1, lengths are always a single value plus a unit, and if cal-
+                    culations are required (say, subtracting the width of a border from a total
+                    width), the developer has to do the calculation. But in CSS3, the browser
+                    performs the calculations
+                </p>
+            </div>
+        </div>
+        <div class="viewportdim">
+            <h2>Using vw and vh</h2>
+            <p>
+                A better solution is to use CSS3’s viewport-relative units— vh and vw —
+                which represent viewport height and width, respectively. Each unit of value
+                represents 1 percent of the appropriate viewport dimension: 1vh is 1 per-
+                cent of the viewport height, and 1vw is 1 percent of the viewport width. For
+                example, the following code makes an element 75 percent of the viewport
+                width and 50 percent of its height:
+                E {
+                height: 50vh;
+                width: 75vw;
+                }
+            </p>
+        </div>
+    </body>
+</html>

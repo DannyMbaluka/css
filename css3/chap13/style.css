@@ -1,0 +1,16 @@
+/* 
+    Created on : Jul 8, 2015, 2:16:59 PM
+    Author     : daniel
+*/
+html{
+    background-color: gray;
+}
+.d3-child{
+    //transform: rotate3d(1,1,0,45deg);
+    transform: perspective(150px) rotateX(30deg) rotateY(45deg);
+    border: 5px solid cyan;
+    width: 80%;
+    padding-left: 20%;
+    background-color: white;
+}
+

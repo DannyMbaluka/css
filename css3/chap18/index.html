@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <h1>Blend Modes, Filter Effects and Masking</h1>
+        <p>
+            The majority of today’s browsers—­desktop
+            and mobile—support the Scalable Vector
+            Graphics (SVG) format. SVG differs from image
+            formats such as GIF, JPEG, and PNG (known as bitmap
+            images), as SVG is made up of a markup language
+            30
+            (similar to HTML) that describes points, or vectors, rather than the grids
+            of pixels that make up bitmap images. One advantage that SVG has over
+            bitmap images is that, as a vector format, it scales well to fit screens of any
+            resolution. In addition to this, the SVG format offers a built-in array of rich
+            graphical effects previously available only in image-editing software such as
+            Photoshop, GIMP, and Sketch.
+        </p>
+        <h3>Background Image with colors</h3>
+        <div class="blend" style="">
+            No blend at all
+        </div>
+        <div class="blend" style="background-blend-mode: screen;">
+            Blending an image using screen keyword
+        </div>
+        <div class="blend" style="background-blend-mode: overlay">
+            Blending an image using overlay keyword
+        </div>
+        <div class="blend" style="background-blend-mode: multiply">
+            Blending an image using multiply keyword
+        </div>
+        <h3 style="clear: both">Multiple Background Images</h3>
+        <div class="blend2" style="">
+            Blending an image using multiply keyword
+        </div>
+        <div class="blend2" style="background-blend-mode: multiply">
+            Blending an image using multiply keyword
+        </div>
+        <div class="blend2" style="background-blend-mode: screen">
+            Blending multiple images with screen
+        </div>
+        <div class="blend2" style="background-blend-mode: overlay">
+            Blending multiple images with overlay
+        </div>
+        <h2 style="clear: left">mix-blend-mode</h2>
+        <div class="blend3" >
+            <span>css3</span>
+        </div>
+        <div class="blend3" >
+            <span style="mix-blend-mode: screen">css3</span>
+        </div>
+        <div class="blend3">
+            <span style="mix-blend-mode: multiply;">css3</span>
+        </div>
+        <div class="blend3">
+            <span style="mix-blend-mode: overlay">css3</span>
+        </div>
+        <h2 style="clear: both">Filter Effects</h2>
+        <div class="blend3" >
+        </div>
+        <div class="blend3" style="-webkit-filter: blur(10px);">
+        </div>
+        <div class="blend3" style="-webkit-filter: contrast(40%);">
+        </div>
+        <div class="blend3" style="-webkit-filter: brightness(40%);">
+        </div>
+    </body>
+</html>

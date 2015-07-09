@@ -1,0 +1,36 @@
+/* 
+    Created on : Jul 7, 2015, 10:24:39 AM
+    Author     : daniel
+*/
+
+ul:first-child{
+    color: blueviolet;
+}
+table{
+    width: 30%;
+}
+tr{
+    background-color: #fff;
+
+}
+tr > td{
+    margin: 2px 2px 0;
+    padding: 5px 0px;
+}
+tr:nth-child(even){
+    background-color: gray;
+}
+table:empty{
+    content: "There is not data to display"
+}
+
+form label{
+    display: block;
+}
+
+input:invalid{
+    border: 1px solid red;
+}
+input:valid{
+    border: 1px solid green;
+}

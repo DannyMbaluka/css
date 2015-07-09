@@ -1,0 +1,35 @@
+@font-face{
+    font-family: Lobster;
+    src: url("fonts/Lobster/Lobster-Regular.ttf") format('truetype');
+}
+@font-face{
+    font-family: Roboto;
+    src: local("Roboto"), url("fonts/Roboto/Roboto-Medium.ttf") format('truetype');
+}
+@font-face{
+    font-family: "Indie Flower";
+    src: local("Indie Flower"), url("fonts/Indie_Flower/IndieFlower.ttf") format('truetype');
+}
+@font-face {
+    font-family: Roboto;
+    font-style: italic;
+    src: url('onts/Roboto/Roboto-MediumItalic.ttf') format('truetype');
+}
+
+body{
+    font-family: Roboto;
+}
+
+h1{
+    font-family: Lobster
+}
+footer{
+    text-align: center;
+    font-family: "Indie Flower";
+    position: fixed;
+    bottom: 0px;
+    height: 60px;
+    background-color: darkgray;
+    width: 100%;
+    padding-top: 10x;
+}

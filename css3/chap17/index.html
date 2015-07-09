@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <h1 style="color: red">No Support</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    This is my mid column
+                </div>
+                <div class="col-md-6">
+                    This is my mid column
+                </div>
+            </div>
+            <h1>Named areas</h1>
+            <div class="grid">
+                <div class="head">
+                    <h2>Header</h2>
+                    Using this code, you can place grid items into areas that span multiple
+                    tracks. In the following snippet, element F is placed into the head area, mean-
+                    ing it spans the second and third columns of the first row, and element G
+                    will be placed into the nav area, making it span the first and second row in
+                    the first column. This is shown in Figure 17-8
+                </div>
+                <div class="nav">
+                    <h2>Side Bar</h2>
+                    <ul style="list-style-type: none">
+                        <li><a href="">Patients</a></li>
+                        <li><a href="">Visits</a></li>
+                        <li><a href="">Scheduling</a></li>
+                        <li><a href="">Setup</a></li>
+                        <li><a href="">Admin</a></li>
+                    </ul>
+                </div>
+                <div class="main">
+                    E {
+                    display: grid;
+                    grid-template-areas:
+                    'nav head head'
+                    'nav main side';
+                    grid-template-columns: repeat(3, 1fr);
+                    grid-template-rows: 80px auto;
+                    }
+                    Using this code, you can place grid items into areas that span multiple
+                    tracks. In the following snippet, element F is placed into the head area, mean-
+                    ing it spans the second and third columns of the first row, and element G
+                    will be placed into the nav area, making it span the first and second row in
+                    the first column. This is shown in Figure 17-8.
+                </div>
+            </div>
+            <h1>Implicit Grids</h1>
+        </div>
+    </body>
+</html>
