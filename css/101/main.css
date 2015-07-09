@@ -1,0 +1,67 @@
+/* 
+    Created on : Jul 9, 2015, 12:37:52 PM
+    Author     : daniel
+*/
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 9, 2015, 12:38:42 PM
+    Author     : daniel
+*/
+@font-face {
+  font-family: Roboto;
+  src: local("Roboto"), url("fonts/Roboto/Roboto-Medium.ttf") format('truetype');
+}
+html {
+  height: 100%;
+  font-family: Roboto;
+}
+html {
+  background-color: #eeeeee;
+}
+header {
+  text-align: right;
+  padding: 20px 0px 20px 20px;
+  background-color: #ffffff;
+  border-top-left-radius: 10px 10px;
+  border-top-right-radius: 10px 10px;
+  clear: both;
+  width: 98%;
+}
+header nav > ul {
+  list-style-type: none;
+  display: inline;
+}
+header nav > ul li {
+  float: left;
+  text-align: center;
+  border-right: 2px solid #eeeeee;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: #45cace;
+}
+header nav > ul li:hover {
+  border-bottom: 3px solid #ffaf18;
+  color: #ffaf18;
+}
+header nav > ul li.active {
+  border-bottom: 3px solid #ffaf18;
+  color: #ffaf18;
+}
+header nav > ul li a {
+  font-size: 1.3em;
+  text-decoration: none;
+  margin: 5px 5px;
+  color: inherit;
+  transition-duration: 0.8s;
+  transition-property: font-weight;
+  transition-timing-function: ease-in-out;
+}
+header nav > ul li a:hover {
+  color: inherit;
+  font-weight: bold;
+}
+/*# sourceMappingURL=main.css.map */

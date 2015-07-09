@@ -1,0 +1,60 @@
+/* 
+    Created on : Jul 9, 2015, 12:37:52 PM
+    Author     : daniel
+*/
+
+@import "theme/variables.less";
+@font-face{
+    font-family: Roboto;
+    src: local("Roboto"), url("fonts/Roboto/Roboto-Medium.ttf") format('truetype');
+}
+html{
+    height: 100%;
+    font-family: Roboto;
+}
+html{
+    background-color: @body-bg;
+}
+header{
+    text-align: right;
+    padding: 20px 0px 20px 20px;
+    background-color: @header-bg;
+    border-top-left-radius: 10px 10px;
+    border-top-right-radius: 10px 10px;
+    clear: both;
+    width: 98%;
+    nav > ul{
+        list-style-type: none;
+        display: inline;
+        li{
+            float: left;
+            text-align:center;
+            border-right: 2px solid @body-bg;
+            margin-left: 5px;
+            margin-right: 5px;
+            color: @light-blue;
+            &:hover{
+                border-bottom: 3px solid @orange;
+                color: @orange;
+            }
+            &.active{
+                border-bottom: 3px solid @orange;
+                color: @orange;
+            }
+            a{
+                font-size: 1.3em;
+                text-decoration: none;
+                margin: 5px 5px;
+                color: inherit;
+                transition-duration: 0.8s;
+                transition-property: font-weight;
+                transition-timing-function: ease-in-out;
+                &:hover{
+                    color: inherit;
+                    font-weight: bold;
+                }
+            }
+        }
+
+    } 
+}
