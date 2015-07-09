@@ -1,0 +1,15 @@
+/* 
+    Created on : Jul 9, 2015, 7:54:17 AM
+    Author     : daniel
+*/
+.row{
+    display: grid;
+    grid-template-columns: 1fr repeat(11, 10px 1fr);
+}
+div[class^="col-"]{
+    font-size: 2em;
+}
+.row > div[class$="-6"]{
+    background-color: yellow;
+    grid-row-end: span 6;
+}

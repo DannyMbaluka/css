@@ -7,6 +7,46 @@
         <link href="style.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <div>TODO write content</div>
+        <header>
+            <h1>Flexible Box Layout (Flexbox)</h1>
+        </header>
+        <div class="container">
+            <div id="one">
+                <h3>Div One</h3>
+                <p>
+                    This creates a block-level flex container; you can use the alternate
+                    inline-flex value if you prefer an inline-level container.
+                    Now you can add flex items to the flex container.
+                </p>
+            </div>
+            <div id="two">
+                <h3>Div Two</h3>
+                <p>
+                    The first step in using Flexbox is to create the flex container—the parent ele-
+                    ment that will create a new formatting context for its contents. To declare a
+                    flex container, you simply use a new value for the display property:
+                    E { display: flex; }
+                </p>
+            </div>
+            <div id="three">
+                <h3>Div Three</h3>
+                <p>
+                    A flex item is any child
+                    of the flex container, which is subject to the formatting context created by
+                    the container. For example, in the following code if #container is set as the
+                    flex container, the two child items will become flex items:
+                </p>
+            </div>
+            <div id="four">
+                <h3>Div Four</h3>
+                <p>
+                    When using Flexbox, you will almost certainly encounter situations where
+                    the combined lengths of flex items along the main axis are greater or less
+                    than the width of the flex container. When this happens, the “flexible” part
+                    of Flexbox comes into play. Several properties allow flex items to grow or
+                    shrink to fill their container. I’ll walk you through them in this section.
+                </p>
+            </div>
+        </div>
     </body>
 </html>
